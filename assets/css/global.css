@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,500;1,400;1,500&family=Montserrat:ital,wght@0,400;1,300;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+:root {
+  --primary-color: #ff5a5f;
+  --secondary-color: #2f353d;
+  --font-poppins: "Poppins", sans-serif;
+  --font-monts: "Montserrat", sans-serif;
+  --font-monts-alt: "Montserrat Alternates", sans-serif;
+  --color-black: #000;
+}
+* {
+  transition: all 0.2s ease-in-out;
+  margin: 0;
+  padding: 0;
+}
+.btn-grad {
+  color: #ffffff;
+  border: none !important;
+  -webkit-transition: all 0.4s ease-in-out !important;
+  transition: all 0.4s ease-in-out !important;
+  background: radial-gradient(
+    100% 100% at 53.13% 0%,
+    #31e7fa 0%,
+    #4477ff 52.6%,
+    #db74ff 100%
+  );
+}
+.btn-grad:hover {
+  background: radial-gradient(
+    100% 100% at 53.13% 0%,
+    #31e7fa 20%,
+    #4477ff 50.6%,
+    #db74ff 100%
+  );
+}
+.btn-grad:active {
+  transform: scale(0.96);
+}
+.copy-input {
+  color: #fff;
+  font-size: 1.2rem;
+  outline: none;
+  background: rgba(0, 0, 0, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 0.5rem 1rem;
+  width: 100%;
+  max-width: 400px;
+  text-overflow: ellipsis;
+}
+.copy-btn {
+  font-size: 1.2rem;
+  outline: none;
+  background: rgba(0, 0, 0, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 0.5rem 1rem;
+  color: #fff;
+  cursor: pointer;
+}
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  .copy-input {
+    font-size: 1.2rem;
+  }
+  .copy-btn {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 599px) {
+  .copy-input {
+    font-size: 0.85rem;
+  }
+  .copy-btn {
+    font-size: 0.85rem;
+  }
+}
